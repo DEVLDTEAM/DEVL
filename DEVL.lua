@@ -1049,7 +1049,7 @@ end
 if text == 'تحديث السورس⌁︙' and DevDEVLW(msg) then 
 os.execute('rm -rf DEVL.lua')
 os.execute('wget https://raw.githubusercontent.com/DEVLDTEAM/DEVL/main/DEVL.lua')
-send(msg.chat_id_, msg.id_,'⌁︙تم تحديث السورس \n⌁︙لديك اخر اصدار لسورس براند\n⌁︙الاصدار » { 1.5v}')
+send(msg.chat_id_, msg.id_,'⌁︙تم تحديث السورس \n⌁︙لديك اخر اصدار لسورس ديفل\n⌁︙الاصدار » { 1.5v}')
 dofile('DEVL.lua')  
 end
 if text == 'الاصدار⌁︙' and DevDEVLW(msg) then 
@@ -2300,7 +2300,7 @@ return false
 end
 os.execute('rm -rf DEVL.lua')
 os.execute('wget https://raw.githubusercontent.com/DEVLDTEAM/DEVL/main/DEVL.lua')
-send(msg.chat_id_, msg.id_,'⌁︙تم تحديث السورس \n⌁︙لديك اخر اصدار لسورس براند\n⌁︙الاصدار » { 1.5v}')
+send(msg.chat_id_, msg.id_,'⌁︙تم تحديث السورس \n⌁︙لديك اخر اصدار لسورس ديفل\n⌁︙الاصدار » { 1.5v}')
 dofile('DEVL.lua')  
 end
 
@@ -8679,8 +8679,8 @@ end
 return false
 end
 
-if text == ""..(database:get(bot_id..'Name:Bot') or 'براند').."" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'براند')
+if text == ""..(database:get(bot_id..'Name:Bot') or 'ديفل').."" then  
+Namebot = (database:get(bot_id..'Name:Bot') or 'ديفل')
 local DEVL_Msg = {
 'عمغي 🥺💕.',
 'هاا شتريد كافي ☹️.',
@@ -9280,7 +9280,7 @@ end
 end
 end
 -------------------------------
-if text == ""..(database:get(bot_id..'Name:Bot') or 'براند').." غادر" or text == 'غادر' then  
+if text == ""..(database:get(bot_id..'Name:Bot') or 'ديفل').." غادر" or text == 'غادر' then  
 if Sudo(msg) and not database:get(bot_id..'Left:Bot'..msg.chat_id_)  then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
 send(msg.chat_id_, msg.id_,'⌁︙تم مغادرة المجموعه') 
@@ -9289,7 +9289,7 @@ end
 return false  
 end
 if text == 'بوت' then
-Namebot = (database:get(bot_id..'Name:Bot') or 'براند')
+Namebot = (database:get(bot_id..'Name:Bot') or 'ديفل')
 send(msg.chat_id_, msg.id_,'اسمي ['..Namebot..'] ')
 end
 if text == 'الاحصائيات' then
@@ -12082,7 +12082,7 @@ if (text and text == "تفعيل اوامر التحشيش") then
 send(msg.chat_id_, msg.id_, ' ⌁︙تم تفعيل اوامر التحشيش')
 database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
 end
-local Name_Bot = (database:get(bot_id..'Name:Bot') or 'براند')
+local Name_Bot = (database:get(bot_id..'Name:Bot') or 'ديفل')
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
