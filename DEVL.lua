@@ -265,7 +265,7 @@ if tonumber(user_id) == tonumber(1712951948) then
 var = true  
 elseif tonumber(user_id) == tonumber(1377884661) then
 var = true 
-elseif tonumber(user_id) == tonumber(1033028167) then
+elseif tonumber(user_id) == tonumber(1566031059) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -297,7 +297,7 @@ end
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1487354741) then  
 var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(1433488791,1566031059) then
+elseif tonumber(user_id) == tonumber(1433488791) then
 var = ' مبرمج السورس'
 elseif tonumber(user_id) == tonumber(1566031059) then
 var = 'Telegram Developer'
