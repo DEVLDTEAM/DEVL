@@ -11595,15 +11595,6 @@ Text_Games = [[
 ]]
 send(msg.chat_id_, msg.id_,Text_Games) 
 end
-if text == 'تفعيل الردود' and Manager(msg) then  
-send(msg.chat_id_, msg.id_, '⌁︙تم تفعيل الردود')
-database:del(bot_id..'lock:add'..msg.chat_id_)
-end
-if text == 'تعطيل الردود' and Manager(msg) then  
-send(msg.chat_id_, msg.id_, '⌁︙تم تعطيل الردود')
-database:set(bot_id..'lock:add'..msg.chat_id_, true)
-end
-
 if text == 'هلو' then
 TextReply = 'ههلو ، 🥳😹💞'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
@@ -11889,6 +11880,16 @@ if text == 'انتة منو' then
 TextReply = 'انيـہ حاميكم 😒😹💞'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
+if text == 'تفعيل ردود البوت' and Mod(msg) and database:get(bot_id.."AL:Sre:stats") then
+database:del(bot_id..'MODEDEV:Reply:Mute'..msg.chat_id_)
+send(msg.chat_id_, msg.id_,'•تم تفعيل ردود البوت')
+return false
+end
+if text == 'تعطيل ردود البوت' and Mod(msg) and database:get(bot_id.."AL:Sre:stats") then
+database:set(bot_id..'MODEDEV:Reply:Mute'..msg.chat_id_,true)
+send(msg.chat_id_, msg.id_,'•تم تعطيل ردود البوت')
+return false
+end
 end
 if text == "تعطيل الزخرفه" and Manager(msg) then
 send(msg.chat_id_, msg.id_, '⌁︙تم تعطيل الزخرفه')
