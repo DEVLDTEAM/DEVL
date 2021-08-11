@@ -7680,7 +7680,7 @@ local text =
 ' }\n'..'☆: الايدي » { '..idgp..
 ' }\n'..'☆: الايدي بالصوره » { '..idph..
 ' }\n'..'☆: الرفع » { '..setadd..
-' }\n'..'☆: الحظر » { '..banm..' }\n\n┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉  ┉  ┉\n☆: CH » @tsss2018\n'
+' }\n'..'☆: الحظر » { '..banm..' }\n\n┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉  ┉  ┉\n☆: CH » @rema95ali94\n'
 send(msg.chat_id_, msg.id_,text)     
 end
 if text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
@@ -8702,8 +8702,8 @@ end
 return false
 end
 
-if text == ""..(database:get(bot_id..'Name:Bot') or 'ديفل ').."" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'ديفل ')
+if text == ""..(database:get(bot_id..'Name:Bot') or 'ديفل').."" then
+Namebot = (database:get(bot_id..'Name:Bot') or 'ديفل')
 local DEVL_Msg = {
 'عمغي 🥺💕.',
 'هاا شتريد كافي ☹️.',
@@ -9837,7 +9837,7 @@ local List = {
 ]],
 [[
 ☆•𝐮𝐬𝐞𝐫 : #username 𖣬  
-☆•𝐦𝐬𝐠  : #msgs 𖣬 
+☆•𝐦𝐬??  : #msgs 𖣬 
 ☆•𝐬𝐭𝐚 : #stast 𖣬 
 ☆•𝐢𝐝  : #id 𖣬
 ]],
